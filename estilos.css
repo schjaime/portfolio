@@ -54,12 +54,12 @@ header{
 
 .galeria{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	margin-top: 10px;
 	padding-top: 60px;
-	padding-bottom: 100px;
+	padding-bottom: 300px;
 	background-color: darkgoldenrod;
 }
 
@@ -98,4 +98,47 @@ header{
 	height: 200px auto;
 	width: 500px;
 	background-color: aqua;
+}
+
+.cvstructure{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	margin: 50px;
+	column-gap: 100px;
+}
+
+.cvtrabajos{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: cornsilk;
+	padding: 50px;
+	height: 170px auto;
+	width: 200px;
+}
+
+.cvexp{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: darkseagreen;
+	padding: 50px;
+	max-width: 700px;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: auto;
+	background-color: aquamarine;
+	margin-top: 50px;
 }
