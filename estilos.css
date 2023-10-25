@@ -177,10 +177,10 @@ footer{
 	justify-content: space-around;
 	align-items: center;
 	width: auto;
-	background-color: aquamarine;
 	margin-top: 50px;
 	height: 10vh;
+	background-color: aquamarine;
 	margin-bottom: -20px;
 	margin-right: -20px;
-	margin-left: -20px;;
+	margin-left: -20px;
 }
