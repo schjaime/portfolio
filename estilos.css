@@ -1,44 +1,81 @@
 @charset "utf-8";
 /* CSS Document */
 
-
 ul{
 	list-style: none;
 	padding:0px;
 	margin:0px;
 }
 
-a {
-	text-decoration: none;
-	padding: 15px;
+h1{
+	margin:0px;
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-weight: 400;
+	
 }
 
-h1{
-	padding:0px;
-	margin:0px;
+#bienvenida{
+	color: lightblue;
+	font-size: 45px;
 }
 
 h2{
-	padding:0px;
 	margin:0px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: 400;
 }
 
 h3{
-	padding:0px;
+	margin:0px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+h4{
 	margin:0px;
 }
+
 
 header{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	width: auto;
 	height: 45px;
-	padding-right: 100px;
-	padding-left: 45px;
-	background-color: aquamarine;
+}
+
+a {
+	text-decoration: none;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+nav{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	border: solid;
+	border-width: thin;
+	width: 270px;
+	border-radius: 15px;
+}
+
+.botonera{
+	padding: 10px;
+}
+
+.botonera:hover{
+	background-color: black;
+	color: aliceblue;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#botonera2{
+	background-color: black;
+	color: aliceblue;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 .bienvenida{
@@ -46,10 +83,15 @@ header{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 10px;
+	margin: 15px;
 	padding-top: 150px;
 	padding-bottom: 150px;
-	background-color: bisque;
+	border-radius: 25px;
+	background-image: url("img/prueba.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-color: #040EB0;
+	min-height:100%;
 }
 
 .galeria{
@@ -141,4 +183,8 @@ footer{
 	width: auto;
 	background-color: aquamarine;
 	margin-top: 50px;
+	height: 10vh;
+	margin-bottom: -20px;
+	margin-right: -20px;
+	margin-left: -20px;;
 }
