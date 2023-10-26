@@ -23,35 +23,41 @@
 			</nav>
 		</section>
 	</header>
-	<main>
+	<main class="contacto1">
 		<section>
 			<h1>Contactame! :-&#41;</h1>
 			<h2>Hagamos un proyecto juntxs.</h2>
+		</section>
+		<section>
+			<form method="post" action="mailto:ariadnajaimetareas@gmail.com?subject=Formulario de Portfolio" target="_blank" enctype="text/plain">
 			<div>
-				<form method="post" action="" target="_blank" enctype="text/plain">
-					<label for="Nombre"> <h4>Nombre</h4> </label>
-					<input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Manuel José Joaquín">
+				<label for="Nombre">Nombre</label>
+				<input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Manuel José Joaquín" required>
 					
-					<label for="Apellido"> <h4>Apellido</h4> </label>
-					<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="del Corazón de Jesús Belgrano González">
+				<label for="Apellido">Apellido</label>
+				<input type="text" name="Apellido" id="Apellido" maxlength="50" placeholder="del Corazón de Jesús Belgrano González">
 					
-					<label for="email"><h4>Email</h4></label>
-					<input type="email" name="email" id="email" placeholder="belgranito@hotmail.com" required>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="belgranito@hotmail.com" required>
 					
-					<h4>Tipo de Trabajo</h4>
+				<h4>Tipo de Trabajo</h4>
+				<div>
 					<label for="Trabajos"> Ilustraci&oacute;n <input type="radio" name="Trabajos" value="ilustración" id="Ilustración"></label>
 					<label for="Trabajos">Traducci&oacute;n <input type="radio" name="Trabajos" value="traducción"></label>
 					<label for="Trabajos">Redacci&oacute;n <input type="radio" name="Trabajos" value="redacción"></label>
+				</div>
+				<div>
 					<label for="Trabajos">Dise&ntilde;o <input type="radio" name="Trabajos" value="diseno"></label>
 					<label for="Trabajos">C&oacute;digo <input type="radio" name="Trabajos" value="código"></label>
 					<label for="Trabajos">Otro <input type="radio" name="Trabajos" value="otro"></label>
-					
-					<label for="Mensaje">Contame más</label>
-					<textarea name="Mensaje" id="Mensaje"></textarea>
-					
-					<input type="submit" value="Enviar" formenctype="text/plain">
-				</form>
+				</div>
+			</div>	
+			<div>
+				<label for="Mensaje">Contame más</label>
+				<textarea name="Mensaje" id="Mensaje" maxlenght="600"></textarea>
+				<input type="submit" value="Enviar" formenctype="text/plain">
 			</div>
+			</form>
 		</section>
 	</main>
 	<footer id="footer">
