@@ -4,6 +4,18 @@
 <meta charset="utf-8">
 <title>galeria</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/x-icon" href="img/troste.png">
+<script>
+	function cambiarDisplay(visibilidadNueva){
+		document.getElementById("galeria").style.display = visibilidadNueva
+	}
+	function mostrarGaleria(){
+		cambiarDisplay('flex')
+	}
+	function ocultarGaleria(){
+		cambiarDisplay('none')
+	}
+	</script>
 </head>
 
 <body>
@@ -11,7 +23,7 @@
 		<section>
 			<a href="index.html"><img class="logo" src="img/troste.png" width="90" height="90" alt="logo"/></a>
 		</section>
-		<section class="gap">
+		<section>
 			<nav>
 				<a href="index.html" class="botonera">Inicio</a>
 				<a id="botonera2">Trabajos</a>
@@ -20,25 +32,160 @@
 			</nav>
 		</section>
 	</header>
+	
 	<main class="trabajos1">
-		<section>
+		<section id="miniaturas">
 			<h2>Ilustración digital</h2>
-			<div class="trabajos2">
-				<a href="img/ojete.png"><img src="img/thumnails/thumnail-ojete.png" width="200" height="200" alt="ojo ilustrator"/></a>
-				<a href="img/lata-ilustracion2.png"><img src="img/thumnails/thumnail-lata.png" width="200" height="200" alt="latas"/></a>
-				<a href="img/autoretrato.png"><img src="img/thumnails/thumnail-retrato.png" width="200" height="200" alt="retrato"/></a>
-			</div>
+			<a href="#ojo-1"><img src="img/thumnails/thumnail-ojete.png" width="200px" height="200px" alt="Ojo Ilustrator" onClick="mostrarGaleria()"></a>
+			<a href="#latas-1"><img src="img/thumnails/thumnail-lata.png" width="200px" height="200px" alt="Latas Yokai" onClick="mostrarGaleria()"></a>
+			<a href="#cara"><img src="img/thumnails/thumnail-retrato.png" width="200px" height="200px" alt="Autorretrato" onClick="mostrarGaleria()"></a>
+			<a href="#mc"><img src="img/thumnails/thumnail-mc.png" width="200px" height="200px" alt="Personaje2" onClick="mostrarGaleria()"></a>
+			<a href="#pj-2"><img src="img/thumnails/thumnail-pj2.png" width="200px" height="200px" alt="Personaje2" onClick="mostrarGaleria()"></a>
+			<a href="#pj-3"><img src="img/thumnails/thumnail-pj3.png" width="200px" height="200px" alt="Personaje3" onClick="mostrarGaleria()"></a>
+			<a href="#pj-4"><img src="img/thumnails/thumnail-pj4.png" width="200px" height="200px" alt="Personaje4" onClick="mostrarGaleria()"></a>
+			<h2>Más proyectos de Diseño</h2>
+			<a href="#decidir"><img src="img/thumnails/thumnail-decidir.png" width="200px" height="200px" alt="Campaña Puedo-Decidir" onClick="mostrarGaleria()"></a>
+			<a href="#king-1"><img src="img/thumnails/thumnail-king.png" width="200px" height="200px" alt="Infografía Rattenkoning" onClick="mostrarGaleria()"></a>
+			<a href="#cafe-1"><img src="img/thumnails/thumnail-cafe.png" width="200px" height="200px" alt="Libro sobre Café Cósmico" onClick="mostrarGaleria()"></a>
+			<a href="#luna-1"><img src="img/thumnails/thumnail-rediseno.png" width="200px" height="200px" alt="Doña Luna Rediseño" onClick="mostrarGaleria()"></a>
 		</section>
-		<section class="gap">
-			<h2>Identidad visual</h2>
-			<div class="trabajos2">
-				<a href="img/decidir-campana.png"><img src="img/thumnails/thumnail-decidir.png" width="200" height="200" alt="Puedo Decidir 2021"/></a>
-				<a href="img/rediseno2.png"><img src="img/thumnails/thumnail-rediseno.png" width="200" height="200" alt="Rediseño Doña Luna"/></a>
-			</div>
+		<section id="galeria">
+			<ul id="galeria-oculta">
+				<li class="fraccion-galeria" id="ojo-1">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#ojo-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="ojo-2">
+					<a href="#ojo-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#ojo-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="ojo-3">
+					<a href="#ojo-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				
+				<li class="fraccion-galeria" id="latas-1">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#latas-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="latas-2">
+					<a href="#latas-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#latas-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="latas-3">
+					<a href="#latas-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				
+				<li class="fraccion-galeria" id="cara">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				
+				<li class="fraccion-galeria" id="mc">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				
+				<li class="fraccion-galeria" id="pj-2">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#pj-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="pj-3">
+					<a href="#pj-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#pj-4"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="pj-4">
+					<a href="#pj-3"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="decidir">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				
+				<li class="fraccion-galeria" id="luna-1">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#luna-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="luna-2">
+					<a href="#luna-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				
+				<li class="fraccion-galeria" id="cafe-1">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#cafe-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="cafe-2">
+					<a href="#cafe-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#cafe-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="cafe-3">
+					<a href="#cafe-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#cafe-4"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="cafe-4">
+					<a href="#cafe-3"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#cafe-5"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="cafe-5">
+					<a href="#cafe-4"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				
+				<li class="fraccion-galeria" id="king-1">
+					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#king-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="king-2">
+					<a href="#king-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#king-3"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="king-3">
+					<a href="#king-2"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+			</ul>
 		</section>
-		<section class="gap">
+		<section>
+			
+			
+		</section>
+		<section class="galeria">
+			<ul class="galeria-oculta">
+				
+			</ul>
+		</section>
+		
+		
+		
+		
+		<section>
 			<h2>Pinturas en acrílico</h2>
-			<img>
+			<img alt="zzz">
 		</section>
 	</main>
 </body>

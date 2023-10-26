@@ -107,6 +107,9 @@ nav{
 	content:url("img/troste2.png");
 } 
 
+
+/*------html.INDEX-------*/
+
 .bienvenida{
 	display: flex;
 	flex-direction: column;
@@ -123,7 +126,7 @@ nav{
 	background-color: #040EB0;
 }
 
-.galeria{
+.carro{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -134,7 +137,7 @@ nav{
 	background-color:darkslateblue;
 }
 
-#galeria{
+#carro{
 	color:aliceblue;
 	text-align: center;
 }
@@ -167,12 +170,11 @@ nav{
 .info{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	margin-top: 10px;
 	padding-top: 60px;
 	padding-bottom: 100px;
-	padding-left: 50px;
 }
 
 .soy{
@@ -204,6 +206,9 @@ nav{
 	border-radius: 25px;
 	border: solid;
 }
+
+
+/*------html.CV-------*/
 
 .cvstructure{
 	display: flex;
@@ -247,21 +252,133 @@ nav{
 	margin-top: 30px;
 }
 
+
+/*------html.TRABAJOS-------*/
+
 .trabajos1{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	text-align: left;
+	display: block;
 	margin: 20px 20%;
 }
 
-.trabajos2{
-	display: flex;
-	flex-direction: row;
-	margin-top: 10px;
+#galeria {
+	display: none;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+	background-color: mediumorchid;
+	position: absolute;
+	top: 0;
+	z-index: 10;
 }
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+	cursor: zoom-in;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+
+/*------IDS IMÁGENES DE GALERÍA-------*/
+
+#ojo-1{
+	background-image: url("img/ojete.png");
+}
+#ojo-2{
+	background-image:url("img/ojete3.png");
+}
+#ojo-3{
+	background-image: url("img/ojete2.png");
+}
+
+#latas-1{
+	background-image: url("img/lata-ilustracion1.png");
+}
+#latas-2{
+	background-image: url("img/lata-ilustracion2.png");
+}
+#latas-3{
+	background-image: url("img/lata-sistema.png");
+}
+
+#cara{
+	background-image: url("img/autoretrato.png");
+}
+#mc{
+	background-image: url("img/l1.png");
+}
+#pj-2{
+	background-image: url("img/personaje2.png");
+}
+#pj-3{
+	background-image: url("img/personaje3.png");
+}
+#pj-4{
+	background-image: url("img/personaje4.png");
+}
+
+#decidir{
+	background-image: url("img/decidir-campana.png");
+}
+
+#king-1{
+	background-image: url("img/ratten2.png");
+}
+#king-2{
+	background-image: url("img/ratten3.png");
+}
+#king-3{
+	background-image: url("img/ratten1.png");
+}
+
+#cafe-1{
+	background-image: url("img/cafe-cosmico1.jpg")
+}
+#cafe-2{
+	background-image: url("img/cafe-cosmico2.jpg");
+}
+#cafe-3{
+	background-image: url("img/cafe-cosmico3.jpg");
+}
+#cafe-4{
+	background-image: url("img/cafe-cosmico4.jpg");
+}
+#cafe-5{
+	background-image: url("img/cafe-cosmico6.jpg");
+}
+
+#luna-1{
+	background-image: url("img/rediseno2.png");
+}
+#luna-2{
+	background-image:url("img/rediseno1.png");
+}
+
+/*------html.CONTACTO-------*/
 
 .contacto1{
 	display: flex;
@@ -301,6 +418,8 @@ input[type=radio]{
 	width: auto;
 }
 
+
+/*------Footer-------*/
 
 footer{
 	display: flex;
