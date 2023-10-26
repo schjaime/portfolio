@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>contacto</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<section>
+			<a href="index.html"><img class="logo" src="img/troste.png" width="90" height="90" alt="logo"/></a>
+		</section>
+		<section class="gap">
+			<nav>
+				<a href="index.html" class="botonera">Inicio</a>
+				<a href="trabajos.html" class="botonera">Trabajos</a>
+				<a href="cv.html" class="botonera">CV</a>
+				<a id="botonera2">Contacto</a>
+			</nav>
+		</section>
+	</header>
+	<main>
+		<section>
+			<h1>Contactame! :-&#41;</h1>
+			<h2>Hagamos un proyecto juntxs.</h2>
+			<div>
+				<form method="post" action="" target="_blank" enctype="text/plain">
+					<label for="Nombre"> <h4>Nombre</h4> </label>
+					<input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Manuel José Joaquín">
+					
+					<label for="Apellido"> <h4>Apellido</h4> </label>
+					<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="del Corazón de Jesús Belgrano González">
+					
+					<label for="email"><h4>Email</h4></label>
+					<input type="email" name="email" id="email" placeholder="belgranito@hotmail.com" required>
+					
+					<h4>Tipo de Trabajo</h4>
+					<label for="Trabajos"> Ilustraci&oacute;n <input type="radio" name="Trabajos" value="ilustración" id="Ilustración"></label>
+					<label for="Trabajos">Traducci&oacute;n <input type="radio" name="Trabajos" value="traducción"></label>
+					<label for="Trabajos">Redacci&oacute;n <input type="radio" name="Trabajos" value="redacción"></label>
+					<label for="Trabajos">Dise&ntilde;o <input type="radio" name="Trabajos" value="diseno"></label>
+					<label for="Trabajos">C&oacute;digo <input type="radio" name="Trabajos" value="código"></label>
+					<label for="Trabajos">Otro <input type="radio" name="Trabajos" value="otro"></label>
+					
+					<label for="Mensaje">Contame más</label>
+					<textarea name="Mensaje" id="Mensaje"></textarea>
+					
+					<input type="submit" value="Enviar" formenctype="text/plain">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer id="footer">
+		<a href="https://www.instagram.com/wis.unla/" target="_blank">
+			<img src="img/logo_catedra.svg" width="80" height="80" alt="catedra"/>
+		</a>
+		<p>Computación III UNLa / Portfolio. Todos los derechos reservados 2023</p>
+	</footer>
+	
+</body>
+</html>
