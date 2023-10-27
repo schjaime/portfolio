@@ -5,6 +5,9 @@
 <title>galeria</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="img/troste.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&display=swap" rel="stylesheet">
 <script>
 	function cambiarDisplay(visibilidadNueva){
 		document.getElementById("galeria").style.display = visibilidadNueva
@@ -35,19 +38,25 @@
 	
 	<main class="trabajos1">
 		<section id="miniaturas">
-			<h2>Ilustración digital</h2>
-			<a href="#ojo-1"><img src="img/thumnails/thumnail-ojete.png" width="200px" height="200px" alt="Ojo Ilustrator" onClick="mostrarGaleria()"></a>
-			<a href="#latas-1"><img src="img/thumnails/thumnail-lata.png" width="200px" height="200px" alt="Latas Yokai" onClick="mostrarGaleria()"></a>
-			<a href="#cara"><img src="img/thumnails/thumnail-retrato.png" width="200px" height="200px" alt="Autorretrato" onClick="mostrarGaleria()"></a>
-			<a href="#mc"><img src="img/thumnails/thumnail-mc.png" width="200px" height="200px" alt="Personaje2" onClick="mostrarGaleria()"></a>
-			<a href="#pj-2"><img src="img/thumnails/thumnail-pj2.png" width="200px" height="200px" alt="Personaje2" onClick="mostrarGaleria()"></a>
-			<a href="#pj-3"><img src="img/thumnails/thumnail-pj3.png" width="200px" height="200px" alt="Personaje3" onClick="mostrarGaleria()"></a>
-			<a href="#pj-4"><img src="img/thumnails/thumnail-pj4.png" width="200px" height="200px" alt="Personaje4" onClick="mostrarGaleria()"></a>
-			<h2>Más proyectos de Diseño</h2>
-			<a href="#decidir"><img src="img/thumnails/thumnail-decidir.png" width="200px" height="200px" alt="Campaña Puedo-Decidir" onClick="mostrarGaleria()"></a>
-			<a href="#king-1"><img src="img/thumnails/thumnail-king.png" width="200px" height="200px" alt="Infografía Rattenkoning" onClick="mostrarGaleria()"></a>
-			<a href="#cafe-1"><img src="img/thumnails/thumnail-cafe.png" width="200px" height="200px" alt="Libro sobre Café Cósmico" onClick="mostrarGaleria()"></a>
-			<a href="#luna-1"><img src="img/thumnails/thumnail-rediseno.png" width="200px" height="200px" alt="Doña Luna Rediseño" onClick="mostrarGaleria()"></a>
+			<div>
+				<h2>Ilustración digital</h2>
+				<p>Hago "dibujitos" que pueden adaptarse a diversos trabajos.</p>
+				<a href="#ojo-1"><img src="img/thumnails/thumnail-ojete.png" width="200px" height="200px" alt="Ojo Ilustrator" onClick="mostrarGaleria()"></a>
+				<a href="#latas-1"><img src="img/thumnails/thumnail-lata.png" width="200px" height="200px" alt="Latas Yokai" onClick="mostrarGaleria()"></a>
+				<a href="#mc"><img src="img/thumnails/thumnail-mc.png" width="200px" height="200px" alt="Personaje2" onClick="mostrarGaleria()"></a>
+				<a href="#cara"><img src="img/thumnails/thumnail-retrato.png" width="200px" height="200px" alt="Autorretrato" onClick="mostrarGaleria()"></a>
+				<a href="#pj-2"><img src="img/thumnails/thumnail-pj2.png" width="200px" height="200px" alt="Personaje2" onClick="mostrarGaleria()"></a>
+				<a href="#pj-3"><img src="img/thumnails/thumnail-pj3.png" width="200px" height="200px" alt="Personaje3" onClick="mostrarGaleria()"></a>
+				<a href="#pj-4"><img src="img/thumnails/thumnail-pj4.png" width="200px" height="200px" alt="Personaje4" onClick="mostrarGaleria()"></a>
+			</div>
+		  <div>
+				<h2>Más proyectos de Diseño</h2>
+				<p>TPs que realicé durante mi cursada en la UNLa.</p>
+				<a href="#decidir"><img src="img/thumnails/thumnail-decidir.png" width="200px" height="200px" alt="Campaña Puedo-Decidir" onClick="mostrarGaleria()"></a>
+				<a href="#luna-1"><img src="img/thumnails/thumnail-rediseno.png" width="200px" height="200px" alt="Doña Luna Rediseño" onClick="mostrarGaleria()"></a>
+				<a href="#king-1"><img src="img/thumnails/thumnail-king.png" width="200px" height="200px" alt="Infografía Rattenkoning" onClick="mostrarGaleria()"></a>
+				<a href="#cafe-1"><img src="img/thumnails/thumnail-cafe.png" width="200px" height="200px" alt="Libro sobre Café Cósmico" onClick="mostrarGaleria()"></a>
+			</div>
 		</section>
 		<section id="galeria">
 			<ul id="galeria-oculta">
@@ -66,7 +75,7 @@
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				
+
 				<li class="fraccion-galeria" id="latas-1">
 					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
@@ -82,19 +91,19 @@
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				
+
 				<li class="fraccion-galeria" id="cara">
 					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				
+
 				<li class="fraccion-galeria" id="mc">
 					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				
+
 				<li class="fraccion-galeria" id="pj-2">
 					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
@@ -115,7 +124,7 @@
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				
+
 				<li class="fraccion-galeria" id="luna-1">
 					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
@@ -126,12 +135,12 @@
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				
+
 				<li class="fraccion-galeria" id="cafe-1">
 					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#cafe-2"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
-				</li>
+					</li>
 				<li class="fraccion-galeria" id="cafe-2">
 					<a href="#cafe-1"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
@@ -152,7 +161,7 @@
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
-				
+
 				<li class="fraccion-galeria" id="king-1">
 					<a href="#" class="primer-ultima-flecha"><img src="img/back.svg" width="50px" height="50px" alt="Anterior"></a>
 					<img class="close" src="img/close.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
@@ -169,23 +178,6 @@
 					<a href="#" class="primer-ultima-flecha"><img src="img/next.svg" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 			</ul>
-		</section>
-		<section>
-			
-			
-		</section>
-		<section class="galeria">
-			<ul class="galeria-oculta">
-				
-			</ul>
-		</section>
-		
-		
-		
-		
-		<section>
-			<h2>Pinturas en acrílico</h2>
-			<img alt="zzz">
 		</section>
 	</main>
 </body>

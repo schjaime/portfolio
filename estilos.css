@@ -256,8 +256,23 @@ nav{
 /*------html.TRABAJOS-------*/
 
 .trabajos1{
-	display: block;
-	margin: 20px 20%;
+	margin: 0px 20%;
+}
+
+#miniaturas p{
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+#miniaturas h2{
+	font-family: 'Bricolage Grotesque', sans-serif;
+	font-weight: 600;
+	margin: 0px;
+}
+
+#miniaturas div{
+	border-bottom: solid;
+	padding: 50px;
 }
 
 #galeria {
@@ -265,10 +280,11 @@ nav{
 	width: 100%;
 	justify-content: center;
 	height: 100vh;
-	background-color: mediumorchid;
+	background-color: black;
 	position: absolute;
 	top: 0;
 	z-index: 10;
+	margin-left: -20%;
 }
 
 #galeria-oculta {
@@ -289,7 +305,6 @@ nav{
 	min-width: 1450px;
 	height: 100vh;
 	justify-content: space-between;
-	cursor: zoom-in;
 }
 
 .primer-ultima-flecha {
@@ -301,7 +316,6 @@ nav{
 	top: 10px;
 	right: 2%;
 }
-
 
 /*------IDS IMÁGENES DE GALERÍA-------*/
 
