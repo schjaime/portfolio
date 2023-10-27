@@ -402,6 +402,7 @@ nav{
 	background-image:url("img/rediseno1.png");
 }
 
+
 /*------html.CONTACTO-------*/
 
 .contacto1{
@@ -450,6 +451,12 @@ input[type=checkbox]{
 
 }
 
+#miel{
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 50px;
+}
 
 /*------Footer-------*/
 
@@ -524,10 +531,12 @@ footer{
 	}
 	
 	.soy{
+		display: block;
+		margin: 0px auto;
 		width: 60%;
 		padding: 30px;
-		margin: 0px;
 	}
+	
 	.soy p{
 		font-size: 12px;
 	}
@@ -539,11 +548,27 @@ footer{
 		height: 140px;
 	}
 	.formulario{
-		padding-left: 30px;
-		margin: 0px;
+		display: block;
+		margin: 0px auto;
+		padding: 30px;
 		height: 20px auto;
 		width: 60%;
 		margin-top: 50px;
+	}
+	
+	.cvstructure{
+		display: inline-block;
+		margin: 0px auto;
+	}
+	
+	.cvtrabajos{
+		width: auto;
+		padding: 30px;
+	}
+	
+	.cvexp{
+		width: auto;
+		padding: 30px;
 	}
 	
 	.trabajos1{
@@ -563,7 +588,38 @@ footer{
 		min-width: 600px;
 	}
 	
+	.contacto1{
+		margin:30px 0px;
+	}
+	
 	#footer{
 		font-size: 12px;
+	}
+	
+	#footer img{
+		width: 55px;
+		height: 55px;
+	}
+	
+	form{
+		display: block;
+		margin: 20px;
+		border-radius: 25px;
+		padding: 30px 20px;
+	}
+	
+	form aside{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 0px;
+		margin-top: 20px;
+	}
+	
+	input[type=submit]{
+		display: block;
+		margin: 0px auto;
+		margin-top: 20px;
+		width: 120px;
 	}
 }
