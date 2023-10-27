@@ -515,6 +515,7 @@ footer{
 		transition: 0.3s;
 	}
 	
+/*------html.INDEX-------*/
 	
 	.bienvenida{
 		margin: -10px;
@@ -575,7 +576,8 @@ footer{
 		margin-top: 50px;
 	}
 	
-
+/*------html.CV-------*/
+	
 	.cvstructure{
 		display: inline-block;
 		margin: 0px auto;
@@ -596,6 +598,8 @@ footer{
 		margin: 0px 5%;
 	}
 	
+/*------html.TRABAJOS-------*/
+	
 	#miniaturas div{
 		display:block;
 		margin: 0 auto;
@@ -615,7 +619,7 @@ footer{
 		max-width: 300px;
 		z-index: 20;
 	}
-
+	
 	.fraccion-galeria {
 		display: flex;
 		align-items: center;
@@ -632,8 +636,8 @@ footer{
 		width: 30px;
 		height: 30px;
 	}
-
 	
+/*------html.CONTACTO y footer-------*/
 	
 	.contacto1{
 		margin:30px 0px;
