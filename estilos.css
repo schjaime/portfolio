@@ -142,13 +142,15 @@ nav{
 	text-align: center;
 }
 
-#ver{
+.boton{
 	margin-top: 15px;
 	margin-bottom: 20px;
 	background-color: aliceblue;
-	border: thin;
+	border: solid thin;
 	padding: 10px 0px;
-	border-radius: 15px;
+	border-radius: 20px;
+	font-weight: 600;
+	width: auto;
 }
 
 .carrosel {
@@ -179,8 +181,6 @@ nav{
 
 .soy{
 	position: relative;
-	justify-content: space-around;
-	align-items: flex-start;
 	background-color: ghostwhite;
 	border-radius: 25px;
 	border: solid;
@@ -196,15 +196,25 @@ nav{
 }
 
 .formulario{
-	position: relative;
-	justify-content: center;
-	padding-left: 50px;
+	padding: 50px;
 	margin-left: 100px;
-	height: 200px auto;
+	height: auto;
 	width: 500px;
 	background-color: ghostwhite;
 	border-radius: 25px;
 	border: solid;
+}
+
+.formulario a{
+	background-color: aliceblue;
+	border: solid thin;
+	padding: 10px 10px;
+	border-radius: 20px;
+	font-weight: 600;
+	width: auto;
+	height: auto;
+	text-align: center;
+	
 }
 
 
@@ -529,11 +539,28 @@ footer{
 		height: 140px;
 	}
 	.formulario{
-		padding-left: 50px;
-		margin-left: 0px;
+		padding-left: 30px;
+		margin: 0px;
 		height: 20px auto;
 		width: 60%;
 		margin-top: 50px;
+	}
+	
+	.trabajos1{
+		margin: 0px 5%;
+	}
+	
+	#miniaturas div{
+		display:block;
+		margin: 0 auto;
+	}
+	
+	.fraccion-galeria{
+		max-width: 600px;
+	}
+		
+	#galeria-oculta{
+		min-width: 600px;
 	}
 	
 	#footer{
